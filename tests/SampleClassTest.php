@@ -12,5 +12,11 @@ use FSalehpour\PHPPackageSkeleton\SampleClass;
 
 class SampleClassTest extends PHPUnit_Framework_TestCase
 {
-    $this->assertTrue(true);
+    /**
+     * @test
+     */
+    public function itReturnsTrue()
+    {
+        $this->assertTrue(true);
+    }
 }
