@@ -1,4 +1,5 @@
 <?php
+namespace Shayanadc\PayamResan;
 class PayamResan {
     protected $client;
     protected $parameters;
