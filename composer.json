@@ -1,26 +1,24 @@
 {
-  "name": "fsalehpour/php-package-skeleton",
-  "description": "A skeleton for writing php packages",
+  "name": "shayanadc/payam-resan",
+  "description": "A package for sending sms messages with payamresan service",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "license": "MIT",
   "authors": [
     {
-      "name": "Faramarz Salehpour",
-      "email": "subs@marz.co"
+      "name": "shayanadc",
+      "email": "shayanadc@gmail.com"
     }
   ],
   "autoload": {
     "psr-4": {
-      "FSalehpour\\PackageName\\": "src/"
+      "Shayanadc\\PayamResan\\": "src/"
     }
   },
   "require": {
     "php" : "^7.0",
-    "ext-pdo" : "*",
-    "ext-pdo_pgsql": "*"
+    "vlucas/phpdotenv": "^2.4"
   },
   "require-dev": {
-    "phpunit/phpunit": "*"
   }
 }
