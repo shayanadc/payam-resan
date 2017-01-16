@@ -5,8 +5,6 @@ class PayamResan {
     protected $parameters;
 
     public function __construct() {
-	$dotenv = new Dotenv\Dotenv(__DIR__);
-	$dotenv->load();
         $this->client = new \SoapClient(getenv('PAYAM_RESAN_WSDL'), array('cache_wsdl' => 'WSDL_CACHE_MEMORY'));
 
         $this->parameters['Username'] = getenv('PAYAM_RESAN_USERNAME');
