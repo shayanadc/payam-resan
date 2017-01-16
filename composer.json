@@ -1,0 +1,26 @@
+{
+  "name": "fsalehpour/php-package-skeleton",
+  "description": "A skeleton for writing php packages",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Faramarz Salehpour",
+      "email": "subs@marz.co"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Fsalehpour\\PackageName\\": "src/"
+    }
+  },
+  "require": {
+    "php" : "^7.0",
+    "ext-pdo" : "*",
+    "ext-pdo_pgsql": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  }
+}
