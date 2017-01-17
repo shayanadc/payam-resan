@@ -19,6 +19,11 @@
         </whitelist>
     </filter>
     <php>
+             <env name="PAYAM_RESAN_WSDL" value="testing"/>
+                          <env name="PAYAM_RESAN_USERNAME" value="testing"/>
+             <env name="PAYAM_RESAN_PASSWORD" value="testing"/>
+             <env name="PAYAM_RESAN_NUMBER" value="testing"/>
+
         <env name="APP_ENV" value="testing"/>
         <env name="CACHE_DRIVER" value="array"/>
         <env name="SESSION_DRIVER" value="array"/>
