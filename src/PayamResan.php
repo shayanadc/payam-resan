@@ -14,7 +14,13 @@ class PayamResan {
 
     public function validateParams($mobile, $message) {
         if(!is_array($mobile) || !is_string($message)){
-            throw new \Exception('mobile is should be array and message should be string');
+            throw new \InvalidArgumentException('mobile is should be array and message should be string');
+        }
+    foreach($mobile as $m){
+            $pattern = '/^0?9\d{9}$/';
+            if(!preg_match_all($pattern, $m)){
+                throw new \InvalidArgumentException('mobile number is not valid');
+            }
         }
     }
     public function sendMessage($mobile, $message) {
