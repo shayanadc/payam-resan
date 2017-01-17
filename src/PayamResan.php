@@ -5,11 +5,11 @@ class PayamResan {
     protected $parameters;
 
     public function __construct() {
-        $this->client = new \SoapClient(getenv('PAYAM_RESAN_WSDL'), array('cache_wsdl' => 'WSDL_CACHE_MEMORY'));
+        $this->client = new \SoapClient('http://sms-webservice.ir/v1/v1.asmx?WSDL', array('cache_wsdl' => 'WSDL_CACHE_MEMORY'));
 
-        $this->parameters['Username'] = getenv('PAYAM_RESAN_USERNAME');
-        $this->parameters['PassWord'] = getenv('PAYAM_RESAN_PASSWORD');
-        $this->parameters['SenderNumber'] = getenv('PAYAM_RESAN_NUMBER');
+        $this->parameters['Username'] = 'ag';
+        $this->parameters['PassWord'] = 'agsa';
+        $this->parameters['SenderNumber'] = 'aga';
     }
 
     public function validateParams($mobile, $message) {
