@@ -12,8 +12,14 @@ class PayamResan {
         $this->parameters['SenderNumber'] = getenv('PAYAM_RESAN_NUMBER');
     }
 
+    public function validateParams($mobile, $message) {
+        if(!is_array($mobile) || !is_string($message)){
+            throw new \Exception('mobile is should be array and message should be string');
+        }
+    }
     public function sendMessage($mobile, $message) {
-        $this->parameters['RecipientNumbers'] = array($mobile);
+        $this->validateParams($mobile,$message);
+        $this->parameters['RecipientNumbers'] = $mobile;
         $this->parameters['MessageBodie'] = $message;
         $this->parameters['Type'] = 1;
         $this->parameters['AllowedDelay'] = 0;
