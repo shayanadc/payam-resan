@@ -19,10 +19,11 @@
         </whitelist>
     </filter>
     <php>
-             <env name="PAYAM_RESAN_WSDL" value="testing"/>
-                          <env name="PAYAM_RESAN_USERNAME" value="testing"/>
-             <env name="PAYAM_RESAN_PASSWORD" value="testing"/>
-             <env name="PAYAM_RESAN_NUMBER" value="testing"/>
+
+        <env name="PAYAM_RESAN_WSDL" value="http://sms-webservice.ir/v1/v1.asmx?WSDL"/>
+        <env name="PAYAM_RESAN_USERNAME" value="gag"/>
+        <env name="PAYAM_RESAN_PASSWORD" value="agag"/>
+        <env name="PAYAM_RESAN_NUMBER" value="faf"/>
 
         <env name="APP_ENV" value="testing"/>
         <env name="CACHE_DRIVER" value="array"/>
